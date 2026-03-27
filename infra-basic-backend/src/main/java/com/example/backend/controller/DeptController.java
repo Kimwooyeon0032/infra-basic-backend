@@ -16,7 +16,7 @@ public class DeptController {
 
     private final DeptService deptService;
     
-    @GetMapping
+    @GetMapping("/api")
     public String getApi() {
         return "backend-api";
     }
