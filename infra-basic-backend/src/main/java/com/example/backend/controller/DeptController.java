@@ -15,8 +15,13 @@ import java.util.List;
 public class DeptController {
 
     private final DeptService deptService;
-
+    
     @GetMapping
+    public String getApi() {
+        return "backend-api";
+    }
+    
+    @GetMapping("/depts")
     public List<Dept> getAll() {
         return deptService.findAll();
     }
